@@ -1,0 +1,101 @@
+body {
+    background:linear-gradient(#1FA3D1, #36CDFF) no-repeat fixed;
+    text-align:center;
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+}
+
+#mainTitle {
+    display: inline-block;
+    margin-bottom: 0;
+    border-color: black;
+    font-family: "Aclonica", "sans-serif";
+    padding: 10px;
+    color: white;
+
+
+}
+
+#timer {
+
+    width: fit-content;
+    margin: 0;
+    font-family: "Aclonica", "sans-serif";
+    font-weight: lighter;
+    color: white;
+
+
+}
+#stopwatch {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#laps {
+    border: black solid 3px;
+    padding: 10px;
+    list-style-position: inside;
+    min-width: 15vh;
+    max-height: 40vh;
+    overflow-y: auto;
+    min-height: 400px;
+    margin: 0;
+    width: fit-content;
+    align-items:center;
+    text-align: center;
+}
+#lapsSection p {
+    font-size: 20px;
+    font-family: "Aclonica", "sans-serif";
+    font-weight: lighter;
+    color: white;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+#lapsSection li {
+    text-align: center;
+    font-size: 14px;
+    font-family: "Aclonica", "sans-serif";
+    font-weight: normal;
+    color: black;
+}
+#controls {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#controls button {
+    padding: 1em 2em;
+    background-color: #242020;
+    color: white;
+    border: none;
+    border-radius: 1000px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button::after {
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 104%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, #C7D9D9, #96D4E3, #96C3E3);
+    z-index: -1;
+}
+button:hover {
+    z-index: 0;
+    box-shadow: 20px 0 50px #D4D4D4, -20px 0 50px #8C8C8C;
+
+}
